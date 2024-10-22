@@ -35,13 +35,13 @@ import urllib.request
 response = urllib.request.urlopen('https://www.python.org')
 print(response.status)
 print(response.getheaders())
-print(response.getheader('Server'))
+# print(response.getheader('Server'))
+print(response.getheader('Content-Length'))
 ```
 ```
 print(response.getheader('Server'))
-呼叫getheader 方法並傳遞一個參數 Server
-==> 獲取response 表頭的 Server 值
-==> 結果是 nginx，意思是伺服器是用 Nginx 搭建的。
+呼叫getheader 方法並傳遞一個參數 Content-Length
+==> 獲取response 表頭的 Content-Length 值
 ```
 # request 模組
 
