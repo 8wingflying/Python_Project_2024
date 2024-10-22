@@ -11,9 +11,19 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'selenium'
 >>>
 ```
-- 安裝:pip3 install requests selenium
+- 安裝:pip3 install requests 
+- 安裝:pip3 install selenium
+# urllib
+- urllib 是 Python 內置的 HTTP 請求庫
+- 不需要額外安裝即可使用。它包含如下 4 個模組。
+
+request：它是最基本的 HTTP 請求模組，可以用來類比發送請求。就像在流覽器裡輸入網址然後回車一樣，只需要給庫方法傳入 URL 以及額外的參數，就可以模擬實現這個過程了。
+error：異常處理模組，如果出現請求錯誤，我們可以捕獲這些異常，然後進行重試或其他操作以保證程式不會意外終止。
+parse：一個工具模組，提供了許多 URL 處理方法，比如拆分、解析和合併等。
+robotparser：主要用來識別網站的 robots.txt 檔，然後判斷哪些網站可以爬，哪些網站不可以爬，它其實用得比較少。
 
 # request 模組
+
 ## request1.py
 ```python
 import requests
