@@ -43,6 +43,23 @@ print(response.getheader('Server'))
 呼叫getheader 方法並傳遞一個參數 Content-Length
 ==> 獲取response 表頭的 Content-Length 值
 ```
+## urllib3.py ==> 使用error模組
+```python
+from urllib import request, error
+try:
+    response = request.urlopen('http://cuiqingcai.com/index.htm')
+except error.URLError as e:
+    print(e.reason)
+```
+## urllib4.py ==> 使用error模組
+```python
+from urllib import request,error
+try:
+    response = request.urlopen('http://cuiqingcai.com/index.htm')
+except error.HTTPError as e:
+    print(e.reason, e.code, e.headers, sep='\n')
+```
+## 開啟chrome 開發人員工具 == > F12
 # request 模組
 
 ## request1.py
