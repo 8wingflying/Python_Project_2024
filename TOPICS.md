@@ -28,7 +28,21 @@ import urllib.request
 response = urllib.request.urlopen('https://www.python.org')
 print(response.read().decode('utf-8'))
 ```
+## urllib2.py
+```
+import urllib.request
 
+response = urllib.request.urlopen('https://www.python.org')
+print(response.status)
+print(response.getheaders())
+print(response.getheader('Server'))
+```
+```
+print(response.getheader('Server'))
+呼叫getheader 方法並傳遞一個參數 Server
+==> 獲取response 表頭的 Server 值
+==> 結果是 nginx，意思是伺服器是用 Nginx 搭建的。
+```
 # request 模組
 
 ## request1.py
