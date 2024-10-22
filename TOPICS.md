@@ -11,3 +11,18 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'selenium'
 >>>
 ```
+- 安裝:pip3 install requests selenium
+
+# request 模組
+## request1.py
+```python
+import requests
+
+r = requests.get('https://www.baidu.com/')
+print(type(r))
+print(r.status_code)
+print(type(r.text))
+print(r.text[:1000])
+print(r.cookies)
+```
+
