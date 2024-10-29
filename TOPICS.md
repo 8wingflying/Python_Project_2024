@@ -256,17 +256,7 @@ else
 511: ('network_authentication_required', 'network_auth', 'network_authentication')
 
 ```
-
-## request11.py  ==> 上傳檔案
-```python
-import requests
-
-files = {'file': open('A888168.ico', 'rb')}
-r = requests.post('http://httpbin.org/post', files=files)
-print(r.text)
-```
-
-## request3.py
+## request11.py  ==> cookies
 ```python
 import requests
 
@@ -283,3 +273,14 @@ print(r.cookies)
 for key, value in r.cookies.items():
     print(key + '=' + value)
 ```
+
+## request12.py  ==> 上傳檔案
+```python
+import requests
+
+files = {'file': open('A888168.ico', 'rb')}
+r = requests.post('http://httpbin.org/post', files=files)
+print(r.text)
+```
+
+
