@@ -257,12 +257,29 @@ else
 
 ```
 
-## request3.py
+## request11.py  ==> 上傳檔案
 ```python
+import requests
 
+files = {'file': open('A888168.ico', 'rb')}
+r = requests.post('http://httpbin.org/post', files=files)
+print(r.text)
 ```
 
 ## request3.py
 ```python
+import requests
 
+r = requests.get('https://www.baidu.com')
+print(r.cookies)
+for key, value in r.cookies.items():
+    print(key + '=' + value)
+```
+```python
+import requests
+
+r = requests.get('https://www.ksu.edu.tw')
+print(r.cookies)
+for key, value in r.cookies.items():
+    print(key + '=' + value)
 ```
