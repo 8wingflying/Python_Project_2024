@@ -1,4 +1,4 @@
-# 1022
+# 1022 urllib
 - 驗證本地端是否已安裝好套件
 ```
 python
@@ -60,9 +60,10 @@ except error.HTTPError as e:
     print(e.reason, e.code, e.headers, sep='\n')
 ```
 ## 開啟chrome 開發人員工具 == > F12
-# request 模組
+# request 模組 參考 [3.2　使用 requests](https://github.com/MyDearGreatTeacher/Python3WebSpider/blob/master/3.2-%E4%BD%BF%E7%94%A8requests.md)
 
 ## request1.py
+- HTTP/ 1.1 八大方法(Method) == > GET POST PUT DELETE HEAD OPTIONS
 ```python
 import requests
 
@@ -73,4 +74,70 @@ print(type(r.text))
 print(r.text[:1000])
 print(r.cookies)
 ```
+```python
+r = requests.post('http://httpbin.org/post')  
+r = requests.put('http://httpbin.org/put')  
+r = requests.delete('http://httpbin.org/delete')  
+r = requests.head('http://httpbin.org/get')  
+r = requests.options('http://httpbin.org/get')
+```
+## request2.py
+```python
+import requests  
 
+r = requests.get('http://httpbin.org/get')  
+print(r.text)
+```
+## request3.py
+```python
+
+```
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
+
+## request3.py
+```python
+
+```
