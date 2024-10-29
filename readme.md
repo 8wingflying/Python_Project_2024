@@ -1,6 +1,7 @@
 # Python 爬蟲 [課程單元](TOPICS.md)
 - urllib 模組
 - requests 模組
+- regular expression正規表達技術
 - [小專題](TOPICS2.md)
 - BeautifulSoup模組
 - Selenium 模組
