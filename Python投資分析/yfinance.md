@@ -1,6 +1,86 @@
 # yfinance
+#### 範例1:使用yfinance下載過去一個月內 Apple 股票的歷史價格數據  colab實作OK.20241209
+- 範例來源: https://ithelp.ithome.com.tw/articles/10341344
+- !pip install  mplfinance yfinance
+```python
+import yfinance as yf
 
-# 範例2:使用yfinance下載台灣股票數據  colab實作OK.20241209
+# 獲取 Apple 股票的數據
+apple = yf.Ticker("AAPL")
+
+# 獲取 Apple 股票的歷史價格
+hist = apple.history(period="1mo")
+
+# 顯示數據
+print(hist)
+```
+### 範例2:使用yfinance history 方法
+- yfinance 套件中，history 方法是用來獲取股票或其他金融工具的歷史市場數據的主要方式。
+- 這個方法返回一個包含了選定時間範圍內的市場數據的 Pandas DataFrame。
+- 這些數據通常包括開盤價、最高價、最低價、收盤價和交易量。
+```python
+import yfinance as yf
+
+# 創建一個股票對象
+stock = yf.Ticker("股票代碼")
+
+# 使用 history 方法獲取歷史數據
+historical_data = stock.history(period="1mo", interval="1d", start=None, end=None, actions=True, auto_adjust=True, back_adjust=False)
+```
+- history 方法的參數說明：
+  - period：要獲取數據的時間範圍。可以是 "1d", "5d", "1mo", "3mo", "6mo", "1y", "2y", "5y", "10y", "ytd", "max" 等。
+  - interval：數據的時間間隔。可以是 "1m", "2m", "5m", "15m", "30m", "60m", "90m", "1h", "1d", "5d", "1wk", "1mo", "3mo" 等。
+  - start 和 end：分別指定獲取數據的起始和結束日期。它們應該是字符串（例如 "YYYY-MM-DD"）或 datetime 對象。
+  - actions：是否包括股息和股票分割數據。預設為 True。
+  - auto_adjust：是否自動調整開盤、收盤、最高和最低價格，以反映股息和股票分割。預設為 True。
+  - back_adjust：是否對歷史數據進行回溯調整，以反映股票分割。預設為 False。
+
+```
+# 要獲取台積電（代碼 "2330.TW"）過去三個月的每日股票數據：
+
+taiwan_2330 = yf.Ticker("2330.TW")
+data = taiwan_2330.history(period="3mo")
+
+# 畫出收盤價圖
+data['Close'].plot()
+```
+### 範例3:使用yfinance Download 方法
+- 在 yfinance 套件中，download 方法是一種非常有用的功能，它允許用戶批量下載多個股票的歷史市場數據。
+- 這對於需要一次性分析多個股票或資產的用戶來說特別方便。
+- 使用 download 方法的基本語法如下：
+```
+import yfinance as yf
+
+data = yf.download(tickers, start=None, end=None, interval="1d", group_by='ticker', auto_adjust=False, prepost=False, threads=True, proxy=None)
+
+# 參數說明:
+# tickers：一個字符串或字符串列表，代表想要下載數據的股票代碼。例如 "AAPL" 或 ["AAPL", "MSFT", "GOOG"]。
+# start 和 end：分別代表數據下載的起始和結束日期。它們應該是字符串（例如 "YYYY-MM-DD"）或 datetime 對象。
+# interval：數據的時間間隔。可選值包括 "1m"（一分鐘）、"1h"（一小時）、"1d"（一天）、"1wk"（一周）和 "1mo"（一個月）。
+# group_by：決定如何組織返回的數據。通常設置為 'ticker'。
+# auto_adjust：是否自動調整數據，以反映股息和股票分割。
+# prepost：是否包括盤前和盤後的交易數據。
+# threads：是否使用多線程來加速下載。
+# proxy：用於下載數據的代理服務器。
+```
+- 範例:下載蘋果公司（AAPL）、微軟公司（MSFT）和谷歌（GOOGL）從 2020 年 1 月 1 日到 2024 年 12 月 1 日的每日股票數據
+```python
+data = yf.download(["AAPL", "MSFT", "GOOGL"], start="2020-01-01", end="2024-12-1")
+```
+- 使用 yfinance 的 download 方法下載股票數據時，返回的資料通常是一個 Pandas DataFrame。
+- 這個 DataFrame 包含了若干列，每列代表不同的市場數據。以下是這些列的一般說明：
+- 列名稱	說明
+- Date	日期，表明數據點的具體日期。
+- Open	開盤價，指股票在該交易日開市時的價格。
+- High	最高價，指股票在該交易日的最高交易價格。
+- Low	最低價，指股票在該交易日的最低交易價格。
+- Close	收盤價，指股票在該交易日結束時的價格。
+- Adj Close	調整後收盤價，將股票分割和股息等因素考慮進去後的收盤價。
+- Volume	交易量，表示在該交易日內買賣該股票的總股數。
+
+- 如果您下載多個股票的數據，DataFrame 會稍有不同。
+- 在這種情況下，數據通常會按股票代碼進行分組，每個股票代碼下會有上述的數據列。
+#### 範例2:使用yfinance下載台灣股票數據  colab實作OK.20241209
 - 範例來源: https://ithelp.ithome.com.tw/articles/10341344
 - !pip install  mplfinance yfinance
 - Period : must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
