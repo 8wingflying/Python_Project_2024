@@ -3,6 +3,7 @@
 
 ## 參考資料
 - [Python 學習筆記 : 用 mplfinance 套件繪製金融圖表 (一) K 線圖](https://yhhuang1966.blogspot.com/2022/09/python-mplfinance.html)
+- [Python 學習筆記 : 用 mplfinance 套件繪製金融圖表 (三) K 線圖模組]()
 - [mplfinance模块详解](https://www.cnblogs.com/yuyanc/p/16388190.html)
 
 ### 繪製台灣股市
