@@ -57,3 +57,5 @@ link_url = soup.find('a')['href']
 # 參考資料
 - [Beautiful Soup Documentation](https://beautiful-soup-4.readthedocs.io/en/latest/)
 - [Python 使用 Beautiful Soup 抓取與解析網頁資料，開發網路爬蟲教學](https://blog.gtwang.org/programming/python-beautiful-soup-module-scrape-web-pages-tutorial/)
+- [[Python爬蟲教學]7個Python使用BeautifulSoup開發網頁爬蟲的實用技巧](https://www.learncodewithmike.com/2020/02/python-beautifulsoup-web-scraper.html)
+- [Beautiful Soup 函式庫](https://steam.oxxostudio.tw/category/python/spider/beautiful-soup.html)
