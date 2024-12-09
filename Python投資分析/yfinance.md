@@ -1,4 +1,6 @@
 # yfinance
+- [yfinance GitHub原始碼](https://github.com/ranaroussi/yfinance)
+- [yfinance 攻略！Python 下載股票價格數據無難度](https://pythonviz.com/finance/yfinance-download-stock-data/)
 #### 範例1:使用yfinance下載過去一個月內 Apple 股票的歷史價格數據  colab實作OK.20241209
 - 範例來源: https://ithelp.ithome.com.tw/articles/10341344
 - !pip install  mplfinance yfinance
@@ -13,6 +15,48 @@ hist = apple.history(period="1mo")
 
 # 顯示數據
 print(hist)
+```
+
+## 實作
+- [元大台灣50 (0050.TW)](https://hk.finance.yahoo.com/quote/0050.TW?p=0050.TW&.tsrc=fin-srch)
+- GOOGLE COLAB
+  - !pip install yfinance
+  - 範例程式
+```python
+import yfinance as yf
+a=yf.download('0050.tw',start='2022-12-20',end='2022-12-26')
+a
+```
+- type(a)
+
+## [元大台灣50反1 (00632R.TW)](https://hk.finance.yahoo.com/quote/00632R.TW?p=00632R.TW)
+```python
+import yfinance as yf
+
+a=yf.download('00632R.tw',period='7d',interval='1m')
+a
+```
+- period == > 7天
+- interval  == >每一分鐘
+
+## [yfinance 攻略！Python 下載股票價格數據無難度](https://pythonviz.com/finance/yfinance-download-stock-data/)
+- 單一股票
+```python
+import yfinance as yf
+
+tsm = yf.Ticker(‘TSM’)
+tsla = yf.Ticker(‘TSLA’)
+tsm.info	
+tsm.financials	
+tsm.earnings	
+tsm.actions	
+tsm.history()
+
+```
+- 多隻股票下載
+```python
+b = yf.download('TSM TSLA',start='2016-01-01',end='2021-01-01')
+b
 ```
 ### 範例2:使用yfinance history 方法
 - yfinance 套件中，history 方法是用來獲取股票或其他金融工具的歷史市場數據的主要方式。
@@ -109,7 +153,46 @@ else:
   - style='charles'
   - title='2330'
   - volume=True ==> 顯示成交量
+  - mav ==> mpf.plot(data, type='line', mav=(2, 5, 10))
 
+## 實作
+- [元大台灣50 (0050.TW)](https://hk.finance.yahoo.com/quote/0050.TW?p=0050.TW&.tsrc=fin-srch)
+- GOOGLE COLAB
+  - !pip install yfinance
+  - 範例程式
+```python
+# 元大台灣50 (0050.TW)
+import yfinance as yf
+a=yf.download('0050.tw',start='2022-12-20',end='2022-12-26')
+a
+type(a)
+
+# [元大台灣50反1 (00632R.TW)](https://hk.finance.yahoo.com/quote/00632R.TW?p=00632R.TW)
+
+a=yf.download('00632R.tw',period='7d',interval='1m')
+a
+
+## period == > 7天
+## interval  == >每一分鐘
+```
+#### [yfinance 攻略！Python 下載股票價格數據無難度](https://pythonviz.com/finance/yfinance-download-stock-data/)
+- 單一股票
+```python
+import yfinance as yf
+
+tsm = yf.Ticker(‘TSM’)
+tsla = yf.Ticker(‘TSLA’)
+tsm.info	
+tsm.financials	
+tsm.earnings	
+tsm.actions	
+tsm.history()
+```
+- 多隻股票下載
+```python
+b = yf.download('TSM TSLA',start='2016-01-01',end='2021-01-01')
+b
+```
 # 參考資料
 - [Python量化交易——mplfinance最佳实践：动态交互式高级K线图(蜡烛图)【源码+详解】](https://blog.csdn.net/Shepherdppz/article/details/117575286)
 - [Plot Stock Chart Using mplfinance in Python](https://plainenglish.io/blog/plot-stock-chart-using-mplfinance-in-python-9286fc69689)
