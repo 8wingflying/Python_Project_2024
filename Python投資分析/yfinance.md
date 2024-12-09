@@ -80,7 +80,8 @@ data = yf.download(["AAPL", "MSFT", "GOOGL"], start="2020-01-01", end="2024-12-1
 
 - 如果您下載多個股票的數據，DataFrame 會稍有不同。
 - 在這種情況下，數據通常會按股票代碼進行分組，每個股票代碼下會有上述的數據列。
-#### 範例2:使用yfinance下載台灣股票數據  colab實作OK.20241209
+
+#### 範例4:使用yfinance下載台灣股票數據  colab實作OK.20241209
 - 範例來源: https://ithelp.ithome.com.tw/articles/10341344
 - !pip install  mplfinance yfinance
 - Period : must be one of ['1d', '5d', '1mo', '3mo', '6mo', '1y', '2y', '5y', '10y', 'ytd', 'max']
@@ -103,7 +104,11 @@ else:
   - df:
     - mplfinance 輸入的數據必須是 pandas.DataFrame 類型
     - 對數據格式的要求，必須含有 ‘Open’ , ‘High’ , ‘Low’ , ‘Close’ , ‘Volume’，
-    - 列索引為 pandas.DatetimeIndex 格式、名稱為 ‘Date’。  
+    - 列索引為 pandas.DatetimeIndex 格式、名稱為 ‘Date’。
+  - type='candle'
+  - style='charles'
+  - title='2330'
+  - volume=True ==> 顯示成交量
 
 # 參考資料
 - [Python量化交易——mplfinance最佳实践：动态交互式高级K线图(蜡烛图)【源码+详解】](https://blog.csdn.net/Shepherdppz/article/details/117575286)
