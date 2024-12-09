@@ -1,6 +1,7 @@
 # FINMIND模組
 - [FinMind 金融 X 大數據](https://finmindtrade.com/)
 - [Quick start with FinMind Finance data API](https://finmind.github.io/quickstart/)
+- [FinMind拿資料，只提供部分免費功能!](https://ithelp.ithome.com.tw/articles/10343838)
 - Google Colab安裝 ==> !pip install FinMind
 
 #### 範例:捉 0050 資料，開始時間寫 2000-01-01 (0050 上市時間是 2003-06)
