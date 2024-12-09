@@ -4,5 +4,5 @@
 - [成長飆股怎麼找？超級績效選股法大解密 - FinLab](https://www.youtube.com/watch?v=ZOQrAg9qqcY&t=303s)
   - [趨勢樣版 Trend Template Criteria.ipynb](https://colab.research.google.com/drive/1-tuzdjS4GiKbvcY5rlsEd8Y0-ZAsm0XC?usp=sharing)
   - https://www.youtube.com/watch?v=ZOQrAg9qqcY 
-
+- FinLab 台股線上回測平台：https://ai.finlab.tw/
 # [FinLab財經實驗室](https://www.youtube.com/@FinlabPython)
