@@ -47,3 +47,19 @@ print(df)
 ```
 stock_data.to_csv("TSMC_stock_data.csv", index=False)
 ```
+
+```PYTHON
+import pandas as pd
+
+# Read Your CSV
+df = pd.read_csv(r'C:\iThome\TSMC_stock_data.csv')
+
+def calculate_ma(data, window):
+    return data.rolling(window=window).mean()
+
+ma_window = 50  # MA Length
+
+df[f'MA_{ma_window}'] = calculate_ma(df['close'], ma_window)
+
+df.to_csv('TSMC_stock_data_with_MA.csv', index=False)
+```
