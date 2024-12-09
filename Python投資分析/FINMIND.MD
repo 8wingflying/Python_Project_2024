@@ -2,7 +2,7 @@
 - [FinMind 金融 X 大數據](https://finmindtrade.com/)
 - [Quick start with FinMind Finance data API](https://finmind.github.io/quickstart/)
 - [FinMind拿資料，只提供部分免費功能!](https://ithelp.ithome.com.tw/articles/10343838)
-- [官方網址](https://finmind.github.io/)
+- [說明文件|官方網址](https://finmind.github.io/)
 
 - Google Colab安裝 ==> !pip install FinMind
 
