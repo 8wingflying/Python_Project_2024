@@ -1,4 +1,8 @@
-# 1022 urllib
+# PYTHON爬蟲基本測試
+- [urllib模組](#1)
+- [request 模組](#2)
+# 1
+## 1022 urllib
 - 驗證本地端是否已安裝好套件
 ```
 python
@@ -59,6 +63,7 @@ try:
 except error.HTTPError as e:
     print(e.reason, e.code, e.headers, sep='\n')
 ```
+# 2
 ## 開啟chrome 開發人員工具 == > F12
 # request 模組 參考 [3.2　使用 requests](https://github.com/MyDearGreatTeacher/Python3WebSpider/blob/master/3.2-%E4%BD%BF%E7%94%A8requests.md)
 
