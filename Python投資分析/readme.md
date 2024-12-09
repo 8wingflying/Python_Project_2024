@@ -1,8 +1,9 @@
 # Python投資分析
 - [yfinance](yfinance.md)
-- [FINLAB測試: 官方]()
-  - 這份檔案能帶領你快速進入 FinLab 的量化交易宇宙，將模組文件裡的重點程式內容、策略常見案例納進其中，將來無論是要以此範本撰寫策略程式，還是要複習內容都很方便。 
-
+- [FINLAB測試](FINLAB.md)
+  - [FINLAB測試: 官方](https://colab.research.google.com/drive/1Af279lUGenjLxh0PaOEwozFRg-3s7NmW?usp=sharing#scrollTo=pJpdkZWvfClS)
+    - 官方檔案能帶領你快速進入 FinLab 的量化交易宇宙，將模組文件裡的重點程式內容、策略常見案例納進其中，將來無論是要以此範本撰寫策略程式，還是要複習內容都很方便。 
+- [FINMIND測試](FINMIND.MD)
 # 常用套件
 - 資料取得
   - yfinance
