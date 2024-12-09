@@ -16,3 +16,8 @@
   - https://github.com/MyDearGreatTeacher/Python3WebSpider
 
 # 相關網址
+- [[Python爬蟲] 網路爬蟲](https://ithelp.ithome.com.tw/articles/10340819)
+- [[Python爬蟲] 分析目標網站](https://ithelp.ithome.com.tw/articles/10340885)
+- [[Python爬蟲] Requests 模組](https://ithelp.ithome.com.tw/articles/10340935)
+- [[Python爬蟲] Beautiful Soup 模組](https://ithelp.ithome.com.tw/articles/10340995)
+- 
