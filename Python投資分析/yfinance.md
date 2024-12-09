@@ -1,6 +1,7 @@
 # yfinance
 - [yfinance GitHub原始碼](https://github.com/ranaroussi/yfinance)
 - [yfinance 攻略！Python 下載股票價格數據無難度](https://pythonviz.com/finance/yfinance-download-stock-data/)
+- [Python 學習筆記 : 用 yfinance 套件取得股票資料 (二)](https://yhhuang1966.blogspot.com/2022/09/python-yfinance_10.html)
 #### 範例1:使用yfinance下載過去一個月內 Apple 股票的歷史價格數據  colab實作OK.20241209
 - 範例來源: https://ithelp.ithome.com.tw/articles/10341344
 - !pip install  mplfinance yfinance
