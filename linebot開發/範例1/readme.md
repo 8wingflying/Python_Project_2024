@@ -129,6 +129,8 @@ if __name__ == '__main__':
   - 1.安裝應用程式執行所需要的套件與工具
   - 2.啟動應用程式平台
   - 3.紀錄
+
+![render_20241217_settings.png](render_20241217_settings.png)
 - Settings
   - General(一般設定)
     - Name(A unique name for your Web Service.) ==> linebot
