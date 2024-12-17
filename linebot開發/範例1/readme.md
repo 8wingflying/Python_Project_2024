@@ -1,21 +1,28 @@
-
-# [使用python開發的機器人程式 8wingflying/linebot (github.com)
-
+# 參考資料
+- [從零開始構建能理解語義的 Linebot 架構 系列]()
 # render設定
 - https://render.com/
 # Line設定
-- [line developer]()
+- [line developer開發者平台](https://developers.line.biz/en/)
 - Basic settings
 - Messaging API
   - Webhook settings
-  - Webhook URL==> https://linebot-ehdb.onrender.com/callback
+    - Webhook URL==> https://linebot-ehdb.onrender.com/callback
+  - Channel access token
+    - Channel access token (long-lived)
 - LIFF | LINE Front-end Framework
 - Security
 - Statistics
 - Roles
+# 官方帳號的建立流程
+- 1.LINE Official Account Manager
+  - 1.建立帳號
+  - 2.啟用Messaging API
+  - 3.設定Webhook
+- 2.LINE Developer Console
+  - 取得Access Token
 
-
-# 放在你Github上的程式 
+# 放在你Github上的程式 [使用python開發的機器人程式 8wingflying/linebot](https://github.com/8wingflying/linebot)
 ```python
 # -*- coding: utf-8 -*-
 
