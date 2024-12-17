@@ -172,6 +172,11 @@ if __name__ == '__main__':
 - LINE官方帳號(Line Official Account Manager)
   - 建立LINE官方帳號(Line Account Manager)==> 建立後點選最右上角落的'設定'
   - 底選左邊
+
+![bot_20241217_3.png](bot_20241217_3.png)
+
+
+![bot_20241217_4.png](bot_20241217_4.png)
   - 設定
   - 帳號設定
   - 權限管理
