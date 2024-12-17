@@ -4,8 +4,9 @@
 
 ![專案架構.png](專案架構.png)
 # 延伸閱讀
-- [只要有心，人人都可以做卡米狗 系列](https://ithelp.ithome.com.tw/users/20107309/ironman/1253)
+- [只要有心，人人都可以做卡米狗 系列(2018)](https://ithelp.ithome.com.tw/users/20107309/ironman/1253)
 - [從零開始構建能理解語義的 Linebot 架構 系列](https://ithelp.ithome.com.tw/users/20105227/ironman/7622)
+- [從無到有，LINE著不走 系列(2024)](https://ithelp.ithome.com.tw/users/20161505/ironman/7441)
 - [LINE BOT 教學](https://steam.oxxostudio.tw/category/python/example/line-bot.html)
 
 # 步驟與流程
