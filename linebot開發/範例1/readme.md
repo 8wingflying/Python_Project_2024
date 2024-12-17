@@ -131,7 +131,7 @@ if __name__ == '__main__':
   - 3.紀錄
 
 ![render_20241217_settings2.png](render_20241217_settings2.png)
-- Settings
+- Settings ==> 上圖紅色2號的各種設定
   - General(一般設定)
     - Name(A unique name for your Web Service.) ==> linebot
     - Region|所在區域(Your services in the same region can communicate over a private network.) ==> Singapore (Southeast Asia)
