@@ -123,12 +123,13 @@ if __name__ == '__main__':
 ```
 
 
-# 步驟2:render設定
+# 步驟2:Render設定
 - https://render.com/
 - 主要的認定任務
-  - 1.安裝應用程式執行所需要的套件與工具
-  - 2.啟動應用程式平台
-  - 3.紀錄
+  - 1.安裝應用程式執行所需要的套件與工具 ==> pip install line-bot-sdk flask gunicorn pysqlite3
+  - 2.設定到使用者指定的GITHUB網址 ==>  https://github.com/8wingflying/linebot
+  - 3.啟動哪一支應用程式 ==>gunicorn linebottest:app
+  - 4.產生連線使用的網址 ==> https://linebot-ehdb.onrender.com
 
 ![render_20241217_settings2.png](render_20241217_settings2.png)
 - Settings ==> 上圖紅色2號的各種設定
