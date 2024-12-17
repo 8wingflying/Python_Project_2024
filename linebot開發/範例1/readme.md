@@ -130,7 +130,7 @@ if __name__ == '__main__':
   - 2.啟動應用程式平台
   - 3.紀錄
 
-![render_20241217_settings.png](render_20241217_settings.png)
+![render_20241217_settings2.png](render_20241217_settings2.png)
 - Settings
   - General(一般設定)
     - Name(A unique name for your Web Service.) ==> linebot
