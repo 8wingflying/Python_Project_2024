@@ -172,9 +172,18 @@ if __name__ == '__main__':
     - 1.建立帳號
     - 2.啟用Messaging API
     - 3.設定Webhook
-  - 2.LINE Developer Console
+    
+![LINE_Official_Account_Manager_20241217.png](LINE_Official_Account_Manager_20241217.png)
+
+   - 2.LINE Developer Console
     - 取得Access Token
+
+![LINE_Developer_20241217.png](LINE_Developer_20241217.png)
+
+
+
 - [line developer開發者平台](https://developers.line.biz/en/)
+
   - 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
   - 步驟3-2:設定BOT20241217
     - 點選BOT20241217
