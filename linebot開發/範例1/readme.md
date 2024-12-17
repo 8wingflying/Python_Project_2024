@@ -9,7 +9,7 @@
 - 步驟2:設定render平台 ==> 取得網站的網址
 - 步驟3:Line 設定
   - 填入 render網站的網址
-  - 將line連線所需要的credential 填入程式
+  - 將 line連線所需要的 credential 填入程式
 
 # 步驟1:開發程式並佈署到你的特定github
 - 放在你Github上的程式
@@ -123,12 +123,6 @@ if __name__ == '__main__':
 ```
 
 
-- 在創建頻道頁面（Create a new channel）依照底下提示輸入：
-- Channel type（頻道）：Messaging API
-- Provider（類型）：My Provider
-- Company or owner’s country or region（所在國家）：填入目前居住國家台灣直接選 Taiwan
-- Channel icon（頻道圖示）：點我下載 ChatGPT 圖示
-- Channel name（頻道名字）：ChatGPT AI Assistant （先輸入後續可修改）
 
 
 # 步驟2:render設定
@@ -162,6 +156,13 @@ if __name__ == '__main__':
     - You can also point custom domains you own to this service. See DNS configuration instructions.
 
 # 步驟3:Line設定
+- 官方帳號的建立流程
+  - 1.LINE Official Account Manager
+    - 1.建立帳號
+    - 2.啟用Messaging API
+    - 3.設定Webhook
+  - 2.LINE Developer Console
+    - 取得Access Token
 - [line developer開發者平台](https://developers.line.biz/en/)
   - 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
   - 步驟3-2:設定BOT20241217
@@ -170,6 +171,7 @@ if __name__ == '__main__':
     - Create a Messaging API channel ==> 跳到LINE官方帳號(Line Official Account Manager)進行後續設定
 - LINE官方帳號(Line Official Account Manager)
   - 建立LINE官方帳號(Line Account Manager)==> 建立後點選最右上角落的'設定'
+  - 底選左邊
   - 設定
   - 帳號設定
   - 權限管理
@@ -206,11 +208,14 @@ if __name__ == '__main__':
 
 
 
-# 官方帳號的建立流程
-- 1.LINE Official Account Manager
-  - 1.建立帳號
-  - 2.啟用Messaging API
-  - 3.設定Webhook
-- 2.LINE Developer Console
-  - 取得Access Token
 
+
+
+
+
+- 在創建頻道頁面（Create a new channel）依照底下提示輸入：
+- Channel type（頻道）：Messaging API
+- Provider（類型）：My Provider
+- Company or owner’s country or region（所在國家）：填入目前居住國家台灣直接選 Taiwan
+- Channel icon（頻道圖示）：點我下載 ChatGPT 圖示
+- Channel name（頻道名字）：ChatGPT AI Assistant （先輸入後續可修改）
