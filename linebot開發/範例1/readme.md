@@ -2,60 +2,16 @@
 # 延伸閱讀
 - [只要有心，人人都可以做卡米狗 系列]()
 - [從零開始構建能理解語義的 Linebot 架構 系列](https://ithelp.ithome.com.tw/users/20105227/ironman/7622)
+- [LINE BOT 教學]()
 
 # 步驟與流程
 - 步驟1:開發程式並佈署到你的特定github
-- 步驟2:設定[render平台]()
+- 步驟2:設定render平台
 - 步驟3:Line 設定
-- 在創建頻道頁面（Create a new channel）依照底下提示輸入：
-- Channel type（頻道）：Messaging API
-Provider（類型）：My Provider
-Company or owner’s country or region（所在國家）：填入目前居住國家台灣直接選 Taiwan
-Channel icon（頻道圖示）：點我下載 ChatGPT 圖示
-Channel name（頻道名字）：ChatGPT AI Assistant （先輸入後續可修改）
-# render設定
-- https://render.com/
-# Line設定
-- [line developer開發者平台](https://developers.line.biz/en/)
-- Basic settings
-  - Basic information
-  - You can change your app name and icon in LINE Official Account Manager.
-  - Channel ID
-  - Channel icon
-  - Channel name
-  - Channel description
-  - Email address: XXX@gmail.com
-  - Privacy policy URL
-  - Terms of use URL optional
-  - App types
-  - Bot
-  - Permissions
-  - PROFILE
-  - Channel secret
-  - Assertion Signing Key
-  - Your user ID
-  - Delete this channel 
-- Messaging API
-  - Webhook settings
-    - Webhook URL==> https://linebot-ehdb.onrender.com/callback
-  - Channel access token
-    - Channel access token (long-lived)
-- LIFF | LINE Front-end Framework
-- Security
-- Statistics
-- Roles
 
-
-
-# 官方帳號的建立流程
-- 1.LINE Official Account Manager
-  - 1.建立帳號
-  - 2.啟用Messaging API
-  - 3.設定Webhook
-- 2.LINE Developer Console
-  - 取得Access Token
-
-# 放在你Github上的程式 [使用python開發的機器人程式 8wingflying/linebot](https://github.com/8wingflying/linebot)
+# 步驟1:開發程式並佈署到你的特定github
+- 放在你Github上的程式
+- [使用python開發的機器人程式 8wingflying/linebot](https://github.com/8wingflying/linebot)
 ```python
 # -*- coding: utf-8 -*-
 
@@ -163,3 +119,83 @@ def handle_message(event):
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
 ```
+
+
+- 在創建頻道頁面（Create a new channel）依照底下提示輸入：
+- Channel type（頻道）：Messaging API
+- Provider（類型）：My Provider
+- Company or owner’s country or region（所在國家）：填入目前居住國家台灣直接選 Taiwan
+- Channel icon（頻道圖示）：點我下載 ChatGPT 圖示
+- Channel name（頻道名字）：ChatGPT AI Assistant （先輸入後續可修改）
+
+
+# render設定
+- https://render.com/
+- 安裝render平台所需要的套件與工具
+- 啟動 render平台
+- 紀錄
+
+- Settings
+  - General(一般設定)
+    - Name(A unique name for your Web Service.) ==> linebot
+    - Region|所在區域(Your services in the same region can communicate over a private network.) ==> Singapore (Southeast Asia)
+    - Instance Type: Free
+  - Build & Deploy(建置與佈署)
+    - Repository|程式所在的地方(The repository used for your Web Service.) ==> https://github.com/8wingflying/linebot
+  - Branch(The Git branch to build and deploy.) ==> main
+  - Git Credentials(User providing the credentials to pull the repository.) ==> 8wingflying@gmail.com (you)
+  - Root DirectoryOptional
+  - Build Filters
+    - Included Paths
+    - Ignored Paths
+  - Build Command ==> pip install line-bot-sdk flask gunicorn pysqlite3
+  - Pre-Deploy CommandOptional
+  - Start Command ==> gunicorn linebottest:app
+  - Auto-Deploy ==> Yes
+    - By default, Render automatically deploys your service whenever you update its code or configuration. Disable to handle deploys manually. Learn more.
+  - Deploy hook ==> ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+    - Your private URL to trigger a deploy for this server. Remember to keep this a secret.
+  - Custom Domains
+    - Your service is always available at https://linebot-ehdb.onrender.com
+    - You can also point custom domains you own to this service. See DNS configuration instructions.
+
+# Line設定
+- [line developer開發者平台](https://developers.line.biz/en/)
+- Basic settings
+  - Basic information
+  - You can change your app name and icon in LINE Official Account Manager.
+  - Channel ID
+  - Channel icon
+  - Channel name
+  - Channel description
+  - Email address: XXX@gmail.com
+  - Privacy policy URL
+  - Terms of use URL optional
+  - App types
+  - Bot
+  - Permissions
+  - PROFILE
+  - Channel secret
+  - Assertion Signing Key
+  - Your user ID
+  - Delete this channel 
+- Messaging API
+  - Webhook settings
+    - Webhook URL==> https://linebot-ehdb.onrender.com/callback
+  - Channel access token
+    - Channel access token (long-lived)
+- LIFF | LINE Front-end Framework
+- Security
+- Statistics
+- Roles
+
+
+
+# 官方帳號的建立流程
+- 1.LINE Official Account Manager
+  - 1.建立帳號
+  - 2.啟用Messaging API
+  - 3.設定Webhook
+- 2.LINE Developer Console
+  - 取得Access Token
+
