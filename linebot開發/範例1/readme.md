@@ -1,4 +1,8 @@
 # 小專案開發: 發票兌獎機器人
+
+# 專案架構
+
+![專案架構.png](專案架構.png)
 # 延伸閱讀
 - [只要有心，人人都可以做卡米狗 系列]()
 - [從零開始構建能理解語義的 Linebot 架構 系列](https://ithelp.ithome.com.tw/users/20105227/ironman/7622)
@@ -132,6 +136,7 @@ if __name__ == '__main__':
   - 4.產生連線使用的網址 ==> https://linebot-ehdb.onrender.com
 
 ![render_20241217_settings2.png](render_20241217_settings2.png)
+- 完成底下的各種設定
 - Settings ==> 上圖紅色2號的各種設定
   - General(一般設定)
     - Name(A unique name for your Web Service.) ==> linebot
@@ -155,7 +160,7 @@ if __name__ == '__main__':
   - Custom Domains
     - Your service is always available at https://linebot-ehdb.onrender.com
     - You can also point custom domains you own to this service. See DNS configuration instructions.
-
+- 點選最右上角的Manual Deploy
 # 步驟3:Line設定
 - 官方帳號的建立流程
   - 1.LINE Official Account Manager
