@@ -180,7 +180,7 @@ if __name__ == '__main__':
 
 ![LINE_Developer_20241217.png](LINE_Developer_20241217.png)
 
-
+### 步驟3:Line設定_詳細設定
 
 - [line developer開發者平台](https://developers.line.biz/en/)
 
