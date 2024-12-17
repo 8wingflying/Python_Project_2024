@@ -171,11 +171,11 @@ if __name__ == '__main__':
     - Create a Messaging API channel ==> 跳到LINE官方帳號(Line Official Account Manager)進行後續設定
 - LINE官方帳號(Line Official Account Manager)
   - 建立LINE官方帳號(Line Account Manager)==> 建立後點選最右上角落的'設定'
-  - 底選左邊
+  - 底選左邊 Message API
 
 ![bot_20241217_3.png](bot_20241217_3.png)
 
-
+  - 點選`啟用 Message API`
 ![bot_20241217_4.png](bot_20241217_4.png)
   - 設定
   - 帳號設定
