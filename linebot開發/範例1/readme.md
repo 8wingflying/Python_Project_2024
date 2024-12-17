@@ -123,14 +123,12 @@ if __name__ == '__main__':
 ```
 
 
-
-
 # 步驟2:render設定
 - https://render.com/
-- 安裝render平台所需要的套件與工具
-- 啟動 render平台
-- 紀錄
-
+- 主要的認定任務
+  - 1.安裝應用程式執行所需要的套件與工具
+  - 2.啟動應用程式平台
+  - 3.紀錄
 - Settings
   - General(一般設定)
     - Name(A unique name for your Web Service.) ==> linebot
