@@ -162,6 +162,10 @@ if __name__ == '__main__':
     - Your service is always available at https://linebot-ehdb.onrender.com
     - You can also point custom domains you own to this service. See DNS configuration instructions.
 - 點選最右上角的Manual Deploy
+- 執行一段時間後就會產生網址
+
+
+
 # 步驟3:Line設定
 - 官方帳號的建立流程
   - 1.LINE Official Account Manager
