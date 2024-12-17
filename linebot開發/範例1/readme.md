@@ -129,7 +129,7 @@ if __name__ == '__main__':
 - Channel name（頻道名字）：ChatGPT AI Assistant （先輸入後續可修改）
 
 
-# render設定
+# 步驟2:render設定
 - https://render.com/
 - 安裝render平台所需要的套件與工具
 - 啟動 render平台
@@ -159,8 +159,20 @@ if __name__ == '__main__':
     - Your service is always available at https://linebot-ehdb.onrender.com
     - You can also point custom domains you own to this service. See DNS configuration instructions.
 
-# Line設定
+# 步驟3:Line設定
 - [line developer開發者平台](https://developers.line.biz/en/)
+- 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
+- 步驟3-2:設定BOT20241217
+  - 點選BOT20241217
+  - 點選Create a Messaging API channel
+  - Create a Messaging API channel
+  - 建立LINE官方帳號(Line Account Manager)==> 建立後點選
+  - 設定
+  - 帳號設定
+  - 權限管理
+  - 回應設定
+- Messaging API
+登錄資訊
 - Basic settings
   - Basic information
   - You can change your app name and icon in LINE Official Account Manager.
