@@ -1,5 +1,7 @@
-# 參考資料
-- [從零開始構建能理解語義的 Linebot 架構 系列]()
+# 小專案開發: 發票兌獎機器人
+# 延伸閱讀
+- [從零開始構建能理解語義的 Linebot 架構 系列](https://ithelp.ithome.com.tw/users/20105227/ironman/7622)
+
 # render設定
 - https://render.com/
 # Line設定
@@ -14,6 +16,7 @@
 - Security
 - Statistics
 - Roles
+
 # 官方帳號的建立流程
 - 1.LINE Official Account Manager
   - 1.建立帳號
