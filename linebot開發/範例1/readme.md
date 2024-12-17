@@ -6,8 +6,10 @@
 
 # 步驟與流程
 - 步驟1:開發程式並佈署到你的特定github
-- 步驟2:設定render平台
+- 步驟2:設定render平台 ==> 取得網站的網址
 - 步驟3:Line 設定
+  - 填入 render網站的網址
+  - 將line連線所需要的credential 填入程式
 
 # 步驟1:開發程式並佈署到你的特定github
 - 放在你Github上的程式
@@ -161,12 +163,13 @@ if __name__ == '__main__':
 
 # 步驟3:Line設定
 - [line developer開發者平台](https://developers.line.biz/en/)
-- 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
-- 步驟3-2:設定BOT20241217
-  - 點選BOT20241217
-  - 點選Create a Messaging API channel
-  - Create a Messaging API channel
-  - 建立LINE官方帳號(Line Account Manager)==> 建立後點選
+  - 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
+  - 步驟3-2:設定BOT20241217
+    - 點選BOT20241217
+    - 點選Create a Messaging API channel
+    - Create a Messaging API channel ==> 跳到LINE官方帳號(Line Official Account Manager)進行後續設定
+- LINE官方帳號(Line Official Account Manager)
+  - 建立LINE官方帳號(Line Account Manager)==> 建立後點選最右上角落的'設定'
   - 設定
   - 帳號設定
   - 權限管理
