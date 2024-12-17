@@ -168,14 +168,14 @@ if __name__ == '__main__':
 
 # 步驟3:Line設定
 - 官方帳號的建立流程
-  - 1.LINE Official Account Manager
+  - 1.[LINE Official Account Manager](https://manager.line.biz/)
     - 1.建立帳號
     - 2.啟用Messaging API
     - 3.設定Webhook
     
 ![LINE_Official_Account_Manager_20241217.png](LINE_Official_Account_Manager_20241217.png)
 
-   - 2.LINE Developer Console
+   - 2.[LINE Developer](https://developers.line.biz/en/)
     - 取得Access Token
 
 ![LINE_Developer_20241217.png](LINE_Developer_20241217.png)
