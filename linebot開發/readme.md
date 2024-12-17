@@ -1,6 +1,26 @@
 # 範例：發票兌獎機器人
 # 參考資料
 - 教科書[最強 AI 投資分析：打造自己的股市顧問機器人，股票趨勢分析×年報解讀×選股推薦×風險管理 | 施威銘研究室](https://www.tenlong.com.tw/products/9789863127727?list_name=srh)
+- [程式碼下載與PPT](https://www.flag.com.tw/bk/t/f3933)
+- 投資相關奘站
+  - [證交所官網](https://www.twse.com.tw/zh/index.html)
+  - [Yahoo 股市網站](https://tw.stock.yahoo.com/)
+  - [鉅亨網](https://www.cnyes.com/)
+  - [FindMind API](https://finmindtrade.com/analysis/#/data/api)
+  - [FinLab API](https://ai.finlab.tw/strategies/)
+  - [年報下載網站](https://doc.twse.com.tw/server-java/t57sb01)
+- BOT網站
+  - [LINE 開發者網站](https://developers.line.biz/zh-hant/)
+  - [Discord 開發者網站](https://discord.com/login?redirect_to=%2Fdevelopers%2Fapplications)
+- [OpenAI developer platform](https://platform.openai.com/docs/overview)
+  - [OpenAI Tokenizer token 計算機](https://platform.openai.com/tokenizer) 
+- Colab 線上開發環境
+- [Replit 線上開發環境](https://replit.com/)
+  - [LINE 股票分析機器人 - Replit 專案](https://replit.com/@flagtech/stklinebot#main.py)
+  - [Discord 股票分析機器人 - Replit 專案](https://replit.com/@flagtech/stkdiscordbot#main.py)
+  - [AI 自動計算技術指標 & 互動式 K 線圖 - Replit 專案](https://replit.com/@flagtech/stkdash)
+  - [LINE 美股分析機器人 - Replit 專案 (作者：范振宇)](https://replit.com/@flagtech/amstklinebot#main.py)
+  - [AI 投組風險管理 - Replit 專案](https://replit.com/@flagtech/stkportfolio#main.py)
 ```
 ▌第 1 章 投資一定要跟老師嗎？股票分析基礎
 1-1 基本面分析
