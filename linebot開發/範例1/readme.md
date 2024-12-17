@@ -171,7 +171,7 @@ if __name__ == '__main__':
   - 1.[LINE Official Account Manager](https://manager.line.biz/)
     - 1.建立帳號
     - 2.啟用Messaging API
-    - 3.設定Webhook
+    - 3.設定Webhook ==> render產生的網址你建立的網站應用程式
     
 ![LINE_Official_Account_Manager_20241217.png](LINE_Official_Account_Manager_20241217.png)
 
