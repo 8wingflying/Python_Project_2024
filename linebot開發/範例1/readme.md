@@ -184,11 +184,11 @@ if __name__ == '__main__':
 
 - [line developer開發者平台](https://developers.line.biz/en/)
 
-  - 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==> BOT20241217
+  - 步驟3-1:點選 Console home ==> 點選 PROVIDER ==> 按CREATER 建立BOT ==>建立本次專案 BOT20241217
   - 步驟3-2:設定BOT20241217
     - 點選BOT20241217
     - 點選Create a Messaging API channel
-    - Create a Messaging API channel ==> 跳到LINE官方帳號(Line Official Account Manager)進行後續設定
+    - Create a Messaging API channel ==> 會跳到LINE官方帳號(Line Official Account Manager)進行後續設定
 - LINE官方帳號(Line Official Account Manager)
   - 建立LINE官方帳號(Line Account Manager)==> 建立後點選最右上角落的'設定'
   - 底選左邊 Message API
@@ -197,6 +197,9 @@ if __name__ == '__main__':
 
   - 點選`啟用 Message API`
 ![bot_20241217_4.png](bot_20241217_4.png)
+
+  
+# 其他  
   - 設定
   - 帳號設定
   - 權限管理
