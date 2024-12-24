@@ -198,7 +198,19 @@ if __name__ == '__main__':
   - 點選`啟用 Message API`
 ![bot_20241217_4.png](bot_20241217_4.png)
 
-  
+# line 平台
+- Line Developers
+  - Basic settings | Channel secret  ==> 瑱入程式碼handler
+  - Channel access token |  Channel access token (long-lived) ==> 瑱入程式碼
+  - Messaging API | Webhook settings ==> Webhook URL
+  - Bot information |  QR code
+```  
+# line_bot_api改成你的channel access token
+# 把handler改成你的channel secret
+line_bot_api = LineBotApi('你的channel access token')
+handler = WebhookHandler('你的channel secret')
+```
+
 # 其他  
   - 設定
   - 帳號設定
